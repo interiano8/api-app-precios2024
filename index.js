@@ -10,6 +10,7 @@ import authRoutes from './routes/auth.js';
 import searchRoutes from './routes/search.js';
 import loginRoutes from './routes/login.js';
 import searchforparametersRoutes from './routes/searchforparameter.js';
+import { reset } from './controllers/resetController.js';
 
 dotenv.config();
 
@@ -30,6 +31,8 @@ app.use('/api', authRoutes);
 app.use('/api', searchRoutes);
 app.use('/api', loginRoutes);
 app.use('/api', searchforparametersRoutes);
+app.use('/api', reset);
+
 
 
 const httpServer = http.createServer(app);
