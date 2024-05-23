@@ -1,2 +1,4 @@
 node_modules
 .env
+_.farmafacil.info_private_key.key
+farmafacil.info_ssl_certificate.cer

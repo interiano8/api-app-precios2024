@@ -15,8 +15,6 @@ import generateRandomPassword from './generatePassword.js';
 // import generateBarcodeBase64 from './generateBarcode.js';
 
 
-
-
 const secret = "9rfdwMRrDS7riDPmQFb24bV78a2XC6NjwMRnWHh6NWdPC2eSUd9UT8S6JpEdn"
 import dotenv from "dotenv";
 
