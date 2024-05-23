@@ -14,14 +14,14 @@ import  sendEmail  from './sendmail.js';
 import generateRandomPassword from './generatePassword.js';
 // import generateBarcodeBase64 from './generateBarcode.js';
 
-const PORT="3005"
-const verionApp="1.0.2"
+
+
 
 const secret = "9rfdwMRrDS7riDPmQFb24bV78a2XC6NjwMRnWHh6NWdPC2eSUd9UT8S6JpEdn"
 import dotenv from "dotenv";
 
 dotenv.config();
-
+const verionApp=process.env.VERSION_APP
 const dbConfig = {
   server: process.env.SERVER_NAME, // Cambia esto al servidor de tu SQL Server
   user: process.env.USER_NAME,
@@ -283,7 +283,6 @@ else {
     res.status(500).send({ error: 'Error interno del servidor' });
   }
 }});
-
 
 
 const httpServer = http.createServer(app);
